@@ -161,9 +161,9 @@ hint - you can use the .includes method to help you solve this */
 
 function filterByWord(originalFlavors, flavor){
     filteredArray = []
-    for (i = 0; i < originalFlavors.length; i++) {
-        if (originalFlavors.includes(flavor)) {
-            filteredArray.push()
+    for (index in originalFlavors) {
+        if (originalFlavors[index].includes(flavor)) {
+            filteredArray.push(originalFlavors[index])
         }
     }
     console.log(filteredArray)
